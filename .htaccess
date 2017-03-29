@@ -1,0 +1,11 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_URI} (/[^.]*|\.)$ [NC]
+RewriteRule .* index.php [L]
+#php_value memory_limit 640M

@@ -1,0 +1,4 @@
+<VirtualHost *:80>
+	ServerName blog.loc
+	DocumentRoot /home/victor/local_projects/blog.loc/		
+</VirtualHost>
